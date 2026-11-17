@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enciclopedia Blindatelor - Contact si Recenzii</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Formular de Opinii și Contact</h1>
+        <nav>
+            <ul>
+                <li><a href="INDEX.html">Acasa</a></li>
+                <li><a href="DESPRE.html">Modele de Tancuri</a></li>
+                <li><a href="CONTACT.html">Contact / Recenzii</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2>Trimite-ne părerea ta despre blindatele prezentate</h2>
+            
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Informații Personale</legend>
+                    
+                    <p>
+                        <label for="nume">Nume și Prenume:</label><br>
+                        <input type="text" id="nume" name="nume" placeholder="Popescu Ion" required>
+                    </p>
+
+                    <p>
+                        <label for="email">Adresă de Email:</label><br>
+                        <input type="email" id="email" name="email" placeholder="exemplu@mail.com" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Sondaj de Opinie</legend>
+
+                    <p>
+                        <label for="tanc-favorit">Alege modelul favorit:</label><br>
+                        <select id="tanc-favorit" name="tanc_favorit">
+                            <option value="t90m">T-90M Proryv</option>
+                            <option value="t80bvm">T-80BVM</option>
+                            <option value="t72b3m">T-72B3M</option>
+                            <option value="t14">T-14 Armata</option>
+                            <option value="bmpt">BMPT Terminator</option>
+                            <option value="sprut">2S25M Sprut-SDM1</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <span>Nivelul de interes pentru tehnică militară:</span><br>
+                        <input type="radio" id="incepator" name="nivel" value="incepator">
+                        <label for="incepator">Pasionat / Începător</label><br>
+
+                        <input type="radio" id="avansat" name="nivel" value="avansat">
+                        <label for="avansat">Cunoscător avansat</label>
+                    </p>
+
+                    <p>
+                        <label for="mesaj">Comentariu sau sugestii:</label><br>
+                        <textarea id="mesaj" name="mesaj" rows="5" cols="40" placeholder="Scrieți mesajul aici..."></textarea>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <input type="submit" value="Trimite Formularul">
+                    <input type="reset" value="Resetează">
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Enciclopedia Blindatelor. Proiect realizat exclusiv în HTML.</p>
+    </footer>
+
+</body>
+</html>
